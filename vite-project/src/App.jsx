@@ -4,8 +4,9 @@ import Navbar from './components/Navbar'
 const App = () => {
   return (
     <>
-     <Navbar />
-      <Card />
+
+      <Card user='John Doe' age={30} />
+      <Card user='Ashwani' age={20} />
       
     </>
   )
