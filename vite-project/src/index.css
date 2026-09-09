@@ -32,3 +32,45 @@ html, body{
   padding: 20px;
   margin: 20px;
 }
+
+.parent {
+  height:100%;
+  width:100%;
+  background-color: #120e0e;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.cards {
+  height:400px;
+  width:300px;
+  background-color: #e1dbdb;
+  border-radius: 8px;
+  padding: 20px;
+}
+.top{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top img{
+  width: 50px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 60%;
+  border: 1px solid #7b6666;
+}
+
+.top button{
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
