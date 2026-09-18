@@ -1,5 +1,7 @@
 import React from 'react'
-import UseStates from './components/hooks/UseStates'
+import Notes from './components/notes-app/Notes'
+
+
 
 
 const App = () => {
@@ -7,7 +9,7 @@ const App = () => {
   
   return (
     <>
-     <UseStates/> 
+    <Notes/>
     </> 
   
   )

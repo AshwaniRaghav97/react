@@ -7,7 +7,9 @@ const UseStates = () => {
   }
 
   const dec=()=>{
-    seta(a-1);
+    seta(prev=>(prev+1));
+    seta(prev=>(prev+1));
+    seta(prev=>(prev+1));
   }
   return (
     <>
