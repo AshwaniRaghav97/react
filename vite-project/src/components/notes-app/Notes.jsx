@@ -36,7 +36,7 @@ const Notes = () => {
         }}
           />
 
-          <button className='bg-white h-10 w-full text-black px-5 py2 rounded font-medium'>Add Notes</button>
+          <button className='bg-white h-10 w-full text-black px-5 py2 rounded font-medium'>Add Note</button>
       </form>
 
       <div className='flex flex-wrap p-10'>
