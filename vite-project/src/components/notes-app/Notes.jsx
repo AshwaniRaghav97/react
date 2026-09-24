@@ -8,11 +8,17 @@ const Notes = () => {
 
   const submitHandler=(e)=>{
     e.preventDefault();
+
+    const copyTask = [...task];
+    copyTask.push({title,content})
+
+    setTask(copyTask)
+
     setTitle("");
     setContent("");
   }
   return (
-    <div className='h-screen bg-black text-white'>
+    <div className='h-full bg-black text-white'>
       <form onSubmit={(e)=>{
         submitHandler(e);
       }}
@@ -36,13 +42,17 @@ const Notes = () => {
         }}
           />
 
-          <button className='bg-white h-10 w-full text-black px-5 py2 rounded font-medium'>Add Notes</button>
+          <button className='bg-white active:bg-gray-300 h-10 w-full text-black px-5 py2 rounded font-medium'>Add Notes</button>
       </form>
 
       <div className='flex flex-wrap p-10'>
-        <div className='h-40 w-full rounded-2xl bg-white '>
-          <h1 className='text-black p-4 font-bold underline'>{title}</h1>
-          <p className='text-black'>{content}</p>
+        <div className='h-full w-full rounded-2xl bg-white '>
+          {task.map(function(ele,idx){
+            return <div key={idx}>
+            <h1 className='text-black p-4 font-bold '>{ele.title}  <p className='text-black underline-none font-medium'>{ele.content}</p></h1>
+          
+            </div>
+          })}
         </div>
       </div>
     </div>
