@@ -1,15 +1,16 @@
 import React from 'react'
-import Notes from './components/notes-app/Notes'
 
+import Api from './components/Api'
 
 
 
 const App = () => {
-  
+  localStorage.setItem('ashish','raghav')
   
   return (
     <>
-    <Notes/>
+    <Api/>
+
     </> 
   
   )
