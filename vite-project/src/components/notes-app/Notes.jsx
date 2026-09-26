@@ -49,7 +49,7 @@ const Notes = () => {
         <div className='h-full w-full rounded-2xl bg-white '>
           {task.map(function(ele,idx){
             return <div key={idx}>
-            <h1 className='text-black p-4 font-bold '>{ele.title}  <p className='text-black underline-none font-medium'>{ele.content}</p></h1>
+            <h1 className='text-black p-4 font-bold '>  {ele.title}  <p className='text-black underline-none font-medium'>{ele.content}</p></h1>
           
             </div>
           })}
