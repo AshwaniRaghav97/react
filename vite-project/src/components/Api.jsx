@@ -2,7 +2,7 @@ import React, { use, useState } from 'react'
 import axios from 'axios'
 const Api = () => {
 
-  const [data,setData] = useState([])
+  const [data,setData] = useState([]);
 
   async function call(){
     // const response = await fetch("https://jsonplaceholder.typicode.com/todos")
