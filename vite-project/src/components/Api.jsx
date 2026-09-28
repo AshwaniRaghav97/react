@@ -9,7 +9,7 @@ const Api = () => {
     // const data = await response.json();
     // console.log(data)
 
-    const response = await axios.get("https://picsum.photos/v2/list");
+    const response = await axios.get("https://picsum.photos/v2/list")
     console.log(response.data)
     setData(response.data)
   }
