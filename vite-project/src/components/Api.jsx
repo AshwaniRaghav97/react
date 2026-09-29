@@ -11,7 +11,7 @@ const Api = () => {
 
     const response = await axios.get("https://picsum.photos/v2/list")
     console.log(response.data);
-    setData(response.data)
+    setData(response.data);
   }
   return (
     <div>
